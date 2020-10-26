@@ -1,0 +1,10 @@
+.container-full {
+  width: 100%;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    height: 100%;
+    width: calc(100% / #{$i});
+  }
+}

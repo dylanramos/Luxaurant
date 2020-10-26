@@ -1,0 +1,17 @@
+header {
+  height: 150px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+
+  @media screen and (max-width: $media-small) {
+    .button-black {
+      display: none;
+    }
+  }
+}
+
+.active {
+  background-color: $color-black;
+}

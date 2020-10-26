@@ -1,0 +1,19 @@
+%button {
+  margin: 2rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+
+.button-black {
+  @extend %button;
+
+  color: $color-gold;
+  background-color: $color-black;
+  border: 1px solid $color-gold;
+
+  &:hover {
+    color: $color-black;
+    background-color: $color-gold;
+    border: 1px solid $color-black;
+  }
+}

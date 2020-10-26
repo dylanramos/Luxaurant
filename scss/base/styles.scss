@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: $color-black;
+  background-color: $color-grey;
+  font-family: $font-body;
+  font-size: $size-body;
+}
+
+%align {
+  display: inline-flex;
+  align-items: center;
+}
+
+.align-left {
+  @extend %align;
+
+  justify-content: flex-start;
+}
+
+.align-right {
+  @extend %align;
+
+  justify-content: flex-end;
+}

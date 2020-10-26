@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=David+Libre:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.container-full {
+  width: 100%;
+}
+
+.col-1 {
+  height: 100%;
+  width: calc(100% / 1);
+}
+
+.col-2 {
+  height: 100%;
+  width: calc(100% / 2);
+}
+
+.col-3 {
+  height: 100%;
+  width: calc(100% / 3);
+}
+
+.col-4 {
+  height: 100%;
+  width: calc(100% / 4);
+}
+
+.col-5 {
+  height: 100%;
+  width: calc(100% / 5);
+}
+
+.col-6 {
+  height: 100%;
+  width: calc(100% / 6);
+}
+
+.col-7 {
+  height: 100%;
+  width: calc(100% / 7);
+}
+
+.col-8 {
+  height: 100%;
+  width: calc(100% / 8);
+}
+
+.col-9 {
+  height: 100%;
+  width: calc(100% / 9);
+}
+
+.col-10 {
+  height: 100%;
+  width: calc(100% / 10);
+}
+
+.col-11 {
+  height: 100%;
+  width: calc(100% / 11);
+}
+
+.col-12 {
+  height: 100%;
+  width: calc(100% / 12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #141414;
+  background-color: #EBEBEB;
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+}
+
+.align-right, .align-left {
+  display: inline-flex;
+  align-items: center;
+}
+
+.align-left {
+  justify-content: flex-start;
+}
+
+.align-right {
+  justify-content: flex-end;
+}
+
+.button-black {
+  margin: 2rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+
+.button-black {
+  color: #DBB166;
+  background-color: #141414;
+  border: 1px solid #DBB166;
+}
+.button-black:hover {
+  color: #141414;
+  background-color: #DBB166;
+  border: 1px solid #141414;
+}
+
+.hamburger {
+  height: 140px;
+  width: 140px;
+  content: url("images/hamburger.svg");
+  padding: 2rem;
+}
+.hamburger:hover {
+  content: url("images/hamburger_hover.svg");
+  cursor: pointer;
+}
+
+.cross {
+  height: 140px;
+  width: 140px;
+  content: url("images/cross.svg");
+  padding: 2rem;
+}
+.cross:hover {
+  content: url("images/cross_hover.svg");
+  cursor: pointer;
+}
+
+.menu-wrap {
+  height: 100%;
+  width: 375px;
+  background-color: #DBB166;
+  border: 1px solid #141414;
+  position: fixed;
+  left: -375px;
+  transition: all 0.5s ease-out;
+}
+.menu-wrap li {
+  padding: 2rem 0 0 2rem;
+}
+.menu-wrap li a {
+  color: #141414;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .hamburger {
+    height: 120px;
+    width: 120px;
+  }
+
+  .cross {
+    height: 120px;
+    width: 120px;
+  }
+
+  .menu-wrap {
+    width: 100vw;
+    left: -100vw;
+  }
+}
+.logo {
+  font-family: David Libre, serif;
+  font-size: 60px;
+  -webkit-text-stroke: 1px #DBB166;
+}
+
+header {
+  height: 150px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+}
+@media screen and (max-width: 480px) {
+  header .button-black {
+    display: none;
+  }
+}
+
+.active {
+  background-color: #141414;
+}
+
+footer {
+  background-color: #313131;
+}
+
+.home {
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .logo {
+  font-size: 5em;
+}
+@media screen and (max-width: 768px) {
+  .home .logo {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home .logo {
+    font-size: 2em;
+  }
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.section .col-1 {
+  height: 100vh;
+}
+.section .col-2 {
+  height: 100vh;
+}
+.section .col-3 {
+  height: 100vh;
+}
+.section .col-4 {
+  height: 100vh;
+}
+.section .col-5 {
+  height: 100vh;
+}
+.section .col-6 {
+  height: 100vh;
+}
+.section .col-7 {
+  height: 100vh;
+}
+.section .col-8 {
+  height: 100vh;
+}
+.section .col-9 {
+  height: 100vh;
+}
+.section .col-10 {
+  height: 100vh;
+}
+.section .col-11 {
+  height: 100vh;
+}
+.section .col-12 {
+  height: 100vh;
+}
+
+.menus-images {
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("images/menu.jpg");
+}
+
+/*# sourceMappingURL=main.css.map */

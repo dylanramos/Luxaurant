@@ -1,0 +1,19 @@
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      height: 100vh;
+    }
+  }
+}
+
+.menus-images {
+  @include image-properties;
+
+  height: 100%;
+  width: 100%;
+  background-image: url("images/menu.jpg");
+}
