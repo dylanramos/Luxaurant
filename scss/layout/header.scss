@@ -1,9 +1,16 @@
 header {
+  @include home-fade-animation;
+
   height: 150px;
   width: 100%;
   top: 0;
   position: fixed;
   display: flex;
+  animation: fadeIn 2s ease-out;
+
+  .logo {
+    display: none;
+  }
 
   @media screen and (max-width: $media-small) {
     .button-black {
@@ -14,4 +21,12 @@ header {
 
 .active {
   background-color: $color-black;
+
+  .logo {
+    font-size: 5rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: none;
+  }
 }

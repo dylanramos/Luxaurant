@@ -1,8 +1,8 @@
 .hamburger {
-  height: 140px;
-  width: 140px;
+  height: 80px;
+  width: 80px;
   content: url("images/hamburger.svg");
-  padding: 2rem;
+  margin: 2rem;
 
   &:hover {
     content: url("images/hamburger_hover.svg");
@@ -11,10 +11,10 @@
 }
 
 .cross {
-  height: 140px;
-  width: 140px;
+  height: 80px;
+  width: 80px;
   content: url("images/cross.svg");
-  padding: 2rem;
+  margin: 2rem;
 
   &:hover {
     content: url("images/cross_hover.svg");

@@ -153,10 +153,10 @@ body {
 }
 
 .hamburger {
-  height: 140px;
-  width: 140px;
+  height: 80px;
+  width: 80px;
   content: url("images/hamburger.svg");
-  padding: 2rem;
+  margin: 2rem;
 }
 .hamburger:hover {
   content: url("images/hamburger_hover.svg");
@@ -164,10 +164,10 @@ body {
 }
 
 .cross {
-  height: 140px;
-  width: 140px;
+  height: 80px;
+  width: 80px;
   content: url("images/cross.svg");
-  padding: 2rem;
+  margin: 2rem;
 }
 .cross:hover {
   content: url("images/cross_hover.svg");
@@ -211,6 +211,15 @@ body {
   font-family: David Libre, serif;
   font-size: 60px;
   -webkit-text-stroke: 1px #DBB166;
+  animation: fadeIn 2s ease-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 header {
@@ -219,6 +228,18 @@ header {
   top: 0;
   position: fixed;
   display: flex;
+  animation: fadeIn 2s ease-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header .logo {
+  display: none;
 }
 @media screen and (max-width: 480px) {
   header .button-black {
@@ -228,6 +249,13 @@ header {
 
 .active {
   background-color: #141414;
+}
+.active .logo {
+  font-size: 5rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: none;
 }
 
 footer {

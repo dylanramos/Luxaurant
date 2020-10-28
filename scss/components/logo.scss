@@ -1,5 +1,8 @@
 .logo {
+  @include home-fade-animation;
+
   font-family: $font-title;
   font-size: $size-title;
   -webkit-text-stroke: 1px $color-gold;
+  animation: fadeIn 2s ease-out;
 }
