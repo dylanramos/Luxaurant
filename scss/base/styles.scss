@@ -24,3 +24,9 @@ body {
 
   justify-content: flex-end;
 }
+
+.align-center {
+  @extend %align;
+
+  justify-content: center;
+}

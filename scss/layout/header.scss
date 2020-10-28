@@ -5,7 +5,7 @@ header {
   width: 100%;
   top: 0;
   position: fixed;
-  display: flex;
+  display: inline-flex;
   animation: fadeIn 2s ease-out;
 
   .logo {
@@ -24,9 +24,7 @@ header {
 
   .logo {
     font-size: 5rem !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     animation: none;
   }
 }

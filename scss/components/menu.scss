@@ -23,11 +23,12 @@
 }
 
 .menu-wrap {
-  height: 100%;
+  height: calc(100% - 150px);
   width: 375px;
   background-color: $color-gold;
   border: 1px solid $color-black;
   position: fixed;
+  bottom: 0;
   left: -375px;
   transition: all 0.5s ease-out;
 

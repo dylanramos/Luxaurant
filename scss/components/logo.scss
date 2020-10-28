@@ -3,6 +3,8 @@
 
   font-family: $font-title;
   font-size: $size-title;
+  color: $color-black;
   -webkit-text-stroke: 1px $color-gold;
+  text-decoration: none;
   animation: fadeIn 2s ease-out;
 }

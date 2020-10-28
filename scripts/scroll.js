@@ -1,25 +1,41 @@
-/*
-// To set the sections id
-const container = document.querySelector('.container-full');
-let sections = container.getElementsByTagName('section');
+/* SCROLL ANIMATION
 
+// To set the sections id
 for (let i = 0; i < sections.length; i++)
 {
+    console.log(sections[i]);
     sections[i].id = i + 1;
 }
+*/
 
-// Scroll event
-let lastScrollPosition = 0;
-let ticking = false;
+/* SELECTORS */
+const header = document.getElementsByTagName('header')[0];
+const hamburger = document.getElementById('hamburger')
+const cross = document.querySelector('.cross');
+const menu = document.querySelector('.menu-wrap');
+const sections = document.querySelectorAll('.section');
 
-let currentSection = 0;
-let section;
+/* HAMBURGER MENU */
+let menuOpen = false;
 
-window.addEventListener('scroll', function () {
+hamburger.addEventListener('click', function () {
+    if(menuOpen) {
+        hamburger.classList.remove('cross');
+        hamburger.classList.add('hamburger');
+        menu.style.left = menu.style.width;
 
-})
- */
-let header = document.getElementsByTagName('HEADER')[0];
+        menuOpen = false;
+    }
+    else {
+        hamburger.classList.remove('hamburger');
+        hamburger.classList.add('cross');
+        menu.style.left = '0';
+
+        menuOpen = true;
+    }
+});
+
+/* HEADER DISPLAY */
 let yPosition;
 
 window.addEventListener('scroll', function () {

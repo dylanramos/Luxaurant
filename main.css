@@ -122,7 +122,7 @@ body {
   font-size: 30px;
 }
 
-.align-right, .align-left {
+.align-center, .align-right, .align-left {
   display: inline-flex;
   align-items: center;
 }
@@ -133,6 +133,10 @@ body {
 
 .align-right {
   justify-content: flex-end;
+}
+
+.align-center {
+  justify-content: center;
 }
 
 .button-black {
@@ -175,11 +179,12 @@ body {
 }
 
 .menu-wrap {
-  height: 100%;
+  height: calc(100% - 150px);
   width: 375px;
   background-color: #DBB166;
   border: 1px solid #141414;
   position: fixed;
+  bottom: 0;
   left: -375px;
   transition: all 0.5s ease-out;
 }
@@ -210,7 +215,9 @@ body {
 .logo {
   font-family: David Libre, serif;
   font-size: 60px;
+  color: #141414;
   -webkit-text-stroke: 1px #DBB166;
+  text-decoration: none;
   animation: fadeIn 2s ease-out;
 }
 @keyframes fadeIn {
@@ -227,7 +234,7 @@ header {
   width: 100%;
   top: 0;
   position: fixed;
-  display: flex;
+  display: inline-flex;
   animation: fadeIn 2s ease-out;
 }
 @keyframes fadeIn {
@@ -252,9 +259,7 @@ header .logo {
 }
 .active .logo {
   font-size: 5rem !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   animation: none;
 }
 
