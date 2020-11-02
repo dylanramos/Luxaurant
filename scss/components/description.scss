@@ -1,3 +1,9 @@
 .description {
-  padding: 3rem;
+  padding: 3em;
+
+  h1 {
+    font-family: $font-title;
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
 }
