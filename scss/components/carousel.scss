@@ -1,0 +1,16 @@
+.carousel {
+  height: 100%;
+  width: 100%;
+
+  .image {
+    @include image-properties;
+
+    height: 100%;
+    width: 100%;
+    background-image: url("images/menu.jpg");
+  }
+
+  .arrow-left {
+    position: absolute;
+  }
+}

@@ -222,6 +222,38 @@ body {
   margin-bottom: 1em;
 }
 
+.arrow-left {
+  height: 100px;
+  content: url("images/arrow_left.svg");
+}
+.arrow-left:hover {
+  cursor: pointer;
+}
+
+.arrow-right {
+  height: 100px;
+  content: url("images/arrow_right.svg");
+}
+.arrow-right:hover {
+  cursor: pointer;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+}
+.carousel .image {
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("images/menu.jpg");
+}
+.carousel .arrow-left {
+  position: absolute;
+}
+
 header {
   height: 150px;
   width: 100%;
@@ -324,15 +356,6 @@ footer {
 }
 .section .col-12 {
   height: 100%;
-}
-
-.menus-images {
-  background-image: url("images/background.png");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  background-image: url("images/menu.jpg");
 }
 
 /*# sourceMappingURL=main.css.map */

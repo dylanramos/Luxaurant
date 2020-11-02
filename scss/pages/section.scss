@@ -9,11 +9,3 @@
     }
   }
 }
-
-.menus-images {
-  @include image-properties;
-
-  height: 100%;
-  width: 100%;
-  background-image: url("images/menu.jpg");
-}
