@@ -1,11 +1,11 @@
 .section {
-  height: 100vh;
+  height: calc(100vh - #{$header-height});
   width: 100%;
   display: flex;
 
   @for $i from 1 through 12 {
     .col-#{$i} {
-      height: 100vh;
+      height: 100%;
     }
   }
 }

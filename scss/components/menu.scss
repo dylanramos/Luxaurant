@@ -23,7 +23,7 @@
 }
 
 .menu-wrap {
-  height: calc(100% - 150px);
+  height: calc(100vh - #{$header-height});
   width: 375px;
   background-color: $color-gold;
   border: 1px solid $color-black;

@@ -1,13 +1,3 @@
-/* SCROLL ANIMATION
-
-// To set the sections id
-for (let i = 0; i < sections.length; i++)
-{
-    console.log(sections[i]);
-    sections[i].id = i + 1;
-}
-*/
-
 /* SELECTORS */
 const header = document.getElementsByTagName('header')[0];
 const hamburger = document.getElementById('hamburger')
@@ -41,7 +31,7 @@ let yPosition;
 window.addEventListener('scroll', function () {
     yPosition = window.scrollY;
 
-    if(yPosition >= window.innerHeight) {
+    if(yPosition >= window.innerHeight - header.offsetHeight) {
         header.classList.add("active");
     }
     else {
