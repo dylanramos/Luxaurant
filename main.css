@@ -241,17 +241,33 @@ body {
 .carousel {
   height: 100%;
   width: 100%;
-}
-.carousel .image {
-  background-image: url("images/background.png");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  background-image: url("images/menu.jpg");
+  display: inline-flex;
+  justify-content: space-between;
 }
 .carousel .arrow-left {
-  position: absolute;
+  margin-left: 30px;
+  align-self: center;
+}
+.carousel .arrow-right {
+  margin-right: 30px;
+  align-self: center;
+}
+.carousel .dots {
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+.carousel .dots .dot {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  background-color: #EBEBEB;
+  border-radius: 50%;
+  border: 1px solid #141414;
+  display: inline-block;
+}
+.carousel .dots .active {
+  background-color: #141414;
 }
 
 header {
@@ -293,11 +309,11 @@ footer {
 }
 
 .home {
-  background-image: url("images/background.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100%;
+  background-image: url("images/background.png");
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -356,6 +372,24 @@ footer {
 }
 .section .col-12 {
   height: 100%;
+}
+
+.menu-1 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/menu.jpg");
+}
+
+.menu-2 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/menu_2.jpg");
+}
+
+.infos-image-1 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/farmer.jpg");
 }
 
 /*# sourceMappingURL=main.css.map */
