@@ -1,0 +1,28 @@
+%text-input-properties {
+  width: 100%;
+  padding: 0em 0.2em;
+  background-color: $color-gold;
+  font-family: $font-body;
+  font-size: $size-body;
+  border: none;
+
+  &::placeholder {
+    color: $color-black;
+    font-family: $font-body;
+    font-size: $size-body;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.text-input-border-bottom {
+  @extend %text-input-properties;
+
+  border-bottom: 1px solid $color-black;
+}
+
+.text-input-border-all {
+  @extend %text-input-properties;
+}

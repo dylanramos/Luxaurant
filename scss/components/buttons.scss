@@ -17,3 +17,17 @@
     border: 1px solid $color-black;
   }
 }
+
+.button-gold {
+  @extend %button;
+
+  color: $color-black;
+  background-color: $color-gold;
+  border: 1px solid $color-black;
+
+  &:hover {
+    color: $color-gold;
+    background-color: $color-black;
+    border: 1px solid $color-gold;
+  }
+}

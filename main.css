@@ -105,6 +105,38 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 30px;
 }
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+h1 {
+  font-family: David Libre, serif;
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 1280px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.bg-gold {
+  background-color: #DBB166 !important;
+}
+
+.bg-black {
+  background-color: #141414 !important;
+}
+
+.bg-light-black {
+  background-color: #313131 !important;
+}
+
+.bg-grey {
+  background-color: #EBEBEB !important;
+}
 
 .align-center, .align-right, .align-left {
   display: inline-flex;
@@ -123,7 +155,7 @@ body {
   justify-content: center;
 }
 
-.button-black {
+.button-gold, .button-black {
   margin: 2rem;
   padding: 1rem 3rem;
   text-decoration: none;
@@ -138,6 +170,17 @@ body {
   color: #141414;
   background-color: #DBB166;
   border: 1px solid #141414;
+}
+
+.button-gold {
+  color: #141414;
+  background-color: #DBB166;
+  border: 1px solid #141414;
+}
+.button-gold:hover {
+  color: #DBB166;
+  background-color: #141414;
+  border: 1px solid #DBB166;
 }
 
 .hamburger {
@@ -216,11 +259,6 @@ body {
 .description {
   padding: 3em;
 }
-.description h1 {
-  font-family: David Libre, serif;
-  font-size: 3rem;
-  margin-bottom: 1em;
-}
 
 .arrow-left {
   height: 100px;
@@ -266,8 +304,26 @@ body {
   border: 1px solid #141414;
   display: inline-block;
 }
-.carousel .dots .active {
-  background-color: #141414;
+
+.text-input-border-all, .text-input-border-bottom {
+  width: 100%;
+  padding: 0em 0.2em;
+  background-color: #DBB166;
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  border: none;
+}
+.text-input-border-all::placeholder, .text-input-border-bottom::placeholder {
+  color: #141414;
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+}
+.text-input-border-all:focus, .text-input-border-bottom:focus {
+  outline: none;
+}
+
+.text-input-border-bottom {
+  border-bottom: 1px solid #141414;
 }
 
 header {
@@ -295,9 +351,6 @@ header .logo {
   }
 }
 
-.active {
-  background-color: #141414;
-}
 .active .logo {
   font-size: 5rem !important;
   display: block;
@@ -306,6 +359,32 @@ header .logo {
 
 footer {
   background-color: #313131;
+}
+footer .newsletter {
+  height: 250px;
+  width: 100%;
+  padding: 1em;
+  background-color: #DBB166;
+}
+footer .newsletter h1 {
+  margin-bottom: 1.5em;
+}
+footer form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer form .text-input-border-bottom {
+  width: 50%;
+}
+footer form .button-gold {
+  margin: 0;
+}
+@media screen and (max-width: 1280px) {
+  footer .newsletter {
+    height: 175px;
+    padding: 0.5em;
+  }
 }
 
 .home {
@@ -321,7 +400,7 @@ footer {
 .home .logo {
   font-size: 5em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   .home .logo {
     font-size: 3em;
   }

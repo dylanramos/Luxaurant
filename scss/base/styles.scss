@@ -3,6 +3,36 @@ body {
   background-color: $color-grey;
   font-family: $font-body;
   font-size: $size-body;
+
+  @media screen and (max-width: $media-medium) {
+    font-size: 1.5rem;
+  }
+}
+
+h1 {
+  font-family: $font-title;
+  font-size: 3rem;
+  margin-bottom: 1em;
+
+  @media screen and (max-width: $media-medium) {
+    font-size: 2.5rem;
+  }
+}
+
+.bg-gold {
+  background-color: $color-gold !important;
+}
+
+.bg-black {
+  background-color: $color-black !important;
+}
+
+.bg-light-black {
+  background-color: $color-light-black !important;
+}
+
+.bg-grey {
+  background-color: $color-grey !important;
 }
 
 %align {

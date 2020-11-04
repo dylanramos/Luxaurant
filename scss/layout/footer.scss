@@ -1,3 +1,39 @@
 footer {
   background-color: $color-light-black;
+
+  .newsletter {
+    height: 250px;
+    width: 100%;
+    padding: 1em;
+    background-color: $color-gold;
+
+    h1 {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .text-input-border-bottom {
+      width: 50%;
+    }
+
+    .button-gold {
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: $media-medium) {
+    .newsletter {
+      height: 175px;
+      padding: 0.5em;
+
+      .button-gold {
+
+      }
+    }
+  }
 }
