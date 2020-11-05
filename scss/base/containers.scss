@@ -2,8 +2,27 @@
   width: 100%;
 }
 
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    width: calc(100% / #{$i});
+.section {
+  height: calc(100vh - #{$header-height});
+  width: 100%;
+  display: flex;
+
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      height: 100%;
+      width: calc(100% / #{$i});
+
+    }
+  }
+
+  @media screen and (max-width: $media-small) {
+    flex-direction: column;
+
+    @for $i from 1 through 12 {
+      .col-#{$i} {
+        height: 50vh;
+        width: 100%;
+      }
+    }
   }
 }

@@ -5,6 +5,10 @@
   &:hover {
     cursor: pointer;
   }
+
+  @media screen and (max-width: $media-small) {
+    height: 75px;
+  }
 }
 
 .arrow-right {
@@ -13,5 +17,9 @@
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: $media-small) {
+    height: 75px;
   }
 }

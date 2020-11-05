@@ -2,7 +2,6 @@
   height: 80px;
   width: 80px;
   content: url("images/hamburger.svg");
-  margin: 2rem;
 
   &:hover {
     content: url("images/hamburger_hover.svg");
@@ -14,7 +13,6 @@
   height: 80px;
   width: 80px;
   content: url("images/cross.svg");
-  margin: 2rem;
 
   &:hover {
     content: url("images/cross_hover.svg");
@@ -44,13 +42,17 @@
 
 @media screen and (max-width: $media-small) {
   .hamburger {
-    height: 120px;
-    width: 120px;
+    height: 60px;
+    width: 60px;
   }
 
   .cross {
-    height: 120px;
-    width: 120px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .button-black {
+    display: none;
   }
 
   .menu-wrap {

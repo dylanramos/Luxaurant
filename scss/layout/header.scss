@@ -3,26 +3,27 @@ header {
 
   height: $header-height;
   width: 100%;
+  padding: 2rem;
   top: 0;
   position: fixed;
   display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
   animation: fadeIn 2s ease-out;
 
   .logo {
     display: none;
   }
-
-  @media screen and (max-width: $media-small) {
-    .button-black {
-      display: none;
-    }
-  }
 }
 
 .active {
   .logo {
-    font-size: 5rem !important;
+    font-size: 5rem;
     display: block;
     animation: none;
+  }
+
+  @media screen and (max-width: $media-small) {
+    height: 75px;
   }
 }
