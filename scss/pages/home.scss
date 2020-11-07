@@ -12,13 +12,13 @@
     font-size: 5em;
   }
 
-  @media screen and (max-width: $media-medium) {
+  @media screen and (max-width: $media-m) {
     .logo {
       font-size: 3em;
     }
   }
 
-  @media screen and (max-width: $media-small) {
+  @media screen and (max-width: $media-s) {
     .logo {
       font-size: 2em;
     }

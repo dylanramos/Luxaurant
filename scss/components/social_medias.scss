@@ -1,0 +1,35 @@
+%social-medias-properties {
+  height: 50px;
+  width: 50px;
+}
+
+.facebook {
+  @extend %social-medias-properties;
+
+  background-image: url("images/facebook.svg");
+
+}
+
+.instagram {
+  @extend %social-medias-properties;
+
+  background-image: url("images/instagram.svg");
+}
+
+.twitter {
+  @extend %social-medias-properties;
+
+  background-image: url("images/twitter.svg");
+}
+
+.linkedin {
+  @extend %social-medias-properties;
+
+  background-image: url("images/linkedin.svg");
+}
+
+.youtube {
+  @extend %social-medias-properties;
+
+  background-image: url("images/youtube.svg");
+}

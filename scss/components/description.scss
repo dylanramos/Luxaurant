@@ -1,7 +1,12 @@
 .description {
   padding: 3em;
 
-  @media screen and (max-width: $media-medium) {
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: $media-m) {
+    padding: 1em;
     font-size: 1.5rem;
   }
 }

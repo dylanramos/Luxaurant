@@ -6,7 +6,7 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: $media-small) {
+  @media screen and (max-width: $media-s) {
     height: 75px;
   }
 }
@@ -19,7 +19,7 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: $media-small) {
+  @media screen and (max-width: $media-s) {
     height: 75px;
   }
 }

@@ -1,5 +1,7 @@
 footer {
   background-color: $color-light-black;
+  display: flex;
+  flex-direction: column;
 
   .newsletter {
     height: 250px;
@@ -8,31 +10,90 @@ footer {
     background-color: $color-gold;
 
     h1 {
-      margin-bottom: 1.5em;
+      height: 60%;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .text-input-border-bottom {
+        width: 50%;
+      }
     }
   }
 
-  form {
-    width: 100%;
+  .footer-informations {
+    height: calc(100% - 250px); // Footer height - newsletter height
+    padding: 1em;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 
-    .text-input-border-bottom {
-      width: 50%;
+    .map {
+      @include image-properties;
+
+      height: 400px;
+      width: 500px;
+      margin-bottom: 1.5em;
+      background-image: url("images/map.png");
     }
 
-    .button-gold {
-      margin: 0;
+    .footer-text {
+      width: calc(100vw - 500px); // Viewport width - map width
+      color: $color-grey;
+      display: flex;
+      flex-wrap: wrap;
+
+      .col-2 {
+        padding: 0 1.5em 1.5em 1.5em;
+      }
+
+      h1 {
+        margin-bottom: 1rem;
+      }
     }
   }
 
-  @media screen and (max-width: $media-medium) {
+  @media screen and (max-width: $media-m) {
     .newsletter {
       height: 175px;
       padding: 0.5em;
+    }
 
-      .button-gold {
+    .map {
+      height: 300px;
+      width: 400px;
+    }
 
+    .footer-text {
+      width: calc(100% - 400px); // Viewport width - map width
+      font-size: 1.5rem;
+
+      .col-2 {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: $media-s) {
+    .newsletter {
+      h1 {
+        height: 70%;
+      }
+    }
+
+    .button-gold {
+      padding: 0.5rem 2rem;
+    }
+
+    .footer-informations {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .footer-text {
+        width: 100%;
+        text-align: center;
       }
     }
   }

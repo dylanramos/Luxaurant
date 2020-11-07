@@ -106,6 +106,7 @@ input {
 }
 @media screen and (max-width: 768px) {
   .section {
+    height: calc(100vh - 75px);
     flex-direction: column;
   }
   .section .col-1 {
@@ -168,7 +169,6 @@ body {
 h1 {
   font-family: David Libre, serif;
   font-size: 3rem;
-  margin-bottom: 1em;
 }
 @media screen and (max-width: 1024px) {
   h1 {
@@ -235,6 +235,11 @@ h1 {
   background-color: #141414;
   border: 1px solid #DBB166;
 }
+@media screen and (max-width: 1024px) {
+  .button-gold {
+    font-size: 1.5rem;
+  }
+}
 
 .hamburger {
   height: 80px;
@@ -274,7 +279,16 @@ h1 {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .button-black {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
+  .menu-wrap {
+    height: calc(100vh - 75px);
+  }
+
   .hamburger {
     height: 60px;
     width: 60px;
@@ -283,10 +297,6 @@ h1 {
   .cross {
     height: 60px;
     width: 60px;
-  }
-
-  .button-black {
-    display: none;
   }
 
   .menu-wrap {
@@ -314,8 +324,12 @@ h1 {
 .description {
   padding: 3em;
 }
+.description h1 {
+  margin-bottom: 1em;
+}
 @media screen and (max-width: 1024px) {
   .description {
+    padding: 1em;
     font-size: 1.5rem;
   }
 }
@@ -349,7 +363,7 @@ h1 {
 .carousel {
   height: 100%;
   width: 100%;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
 }
 .carousel .arrow-left {
@@ -391,16 +405,49 @@ h1 {
 .text-input-border-all:focus, .text-input-border-bottom:focus {
   outline: none;
 }
+@media screen and (max-width: 1024px) {
+  .text-input-border-all, .text-input-border-bottom {
+    font-size: 1.5rem;
+  }
+  .text-input-border-all::placeholder, .text-input-border-bottom::placeholder {
+    font-size: 1.5rem;
+  }
+}
 
 .text-input-border-bottom {
   border-bottom: 1px solid #141414;
 }
 
+.youtube, .linkedin, .twitter, .instagram, .facebook {
+  height: 50px;
+  width: 50px;
+}
+
+.facebook {
+  background-image: url("images/facebook.svg");
+}
+
+.instagram {
+  background-image: url("images/instagram.svg");
+}
+
+.twitter {
+  background-image: url("images/twitter.svg");
+}
+
+.linkedin {
+  background-image: url("images/linkedin.svg");
+}
+
+.youtube {
+  background-image: url("images/youtube.svg");
+}
+
 header {
   height: 150px;
   width: 100%;
-  padding: 2rem;
   top: 0;
+  padding: 2rem;
   position: fixed;
   display: inline-flex;
   justify-content: space-between;
@@ -418,6 +465,12 @@ header {
 header .logo {
   display: none;
 }
+@media screen and (max-width: 768px) {
+  header {
+    height: 75px;
+    padding: 1rem;
+  }
+}
 
 .active .logo {
   font-size: 5rem;
@@ -427,11 +480,17 @@ header .logo {
 @media screen and (max-width: 768px) {
   .active {
     height: 75px;
+    padding: 1rem;
+  }
+  .active .logo {
+    font-size: 4rem;
   }
 }
 
 footer {
   background-color: #313131;
+  display: flex;
+  flex-direction: column;
 }
 footer .newsletter {
   height: 250px;
@@ -440,23 +499,73 @@ footer .newsletter {
   background-color: #DBB166;
 }
 footer .newsletter h1 {
-  margin-bottom: 1.5em;
+  height: 60%;
 }
-footer form {
+footer .newsletter form {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-footer form .text-input-border-bottom {
+footer .newsletter form .text-input-border-bottom {
   width: 50%;
 }
-footer form .button-gold {
-  margin: 0;
+footer .footer-informations {
+  height: calc(100% - 250px);
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+footer .footer-informations .map {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 500px;
+  margin-bottom: 1.5em;
+  background-image: url("images/map.png");
+}
+footer .footer-informations .footer-text {
+  width: calc(100vw - 500px);
+  color: #EBEBEB;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .footer-informations .footer-text .col-2 {
+  padding: 0 1.5em 1.5em 1.5em;
+}
+footer .footer-informations .footer-text h1 {
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 1024px) {
   footer .newsletter {
     height: 175px;
     padding: 0.5em;
+  }
+  footer .map {
+    height: 300px;
+    width: 400px;
+  }
+  footer .footer-text {
+    width: calc(100% - 400px);
+    font-size: 1.5rem;
+  }
+  footer .footer-text .col-2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .newsletter h1 {
+    height: 70%;
+  }
+  footer .button-gold {
+    padding: 0.5rem 2rem;
+  }
+  footer .footer-informations {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .footer-informations .footer-text {
+    width: 100%;
+    text-align: center;
   }
 }
 

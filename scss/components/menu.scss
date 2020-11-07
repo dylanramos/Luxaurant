@@ -21,7 +21,7 @@
 }
 
 .menu-wrap {
-  height: calc(100vh - #{$header-height});
+  height: calc(100vh - 150px); // Viewport height - header height
   width: 375px;
   background-color: $color-gold;
   border: 1px solid $color-black;
@@ -40,7 +40,17 @@
   }
 }
 
-@media screen and (max-width: $media-small) {
+@media screen and (max-width: $media-m){
+  .button-black {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $media-s) {
+  .menu-wrap {
+    height: calc(100vh - 75px); // Viewport height - header height
+  }
+
   .hamburger {
     height: 60px;
     width: 60px;
@@ -49,10 +59,6 @@
   .cross {
     height: 60px;
     width: 60px;
-  }
-
-  .button-black {
-    display: none;
   }
 
   .menu-wrap {

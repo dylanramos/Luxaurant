@@ -29,4 +29,8 @@
     background-color: $color-black;
     border: 1px solid $color-gold;
   }
+
+  @media screen and (max-width: $media-m) {
+    font-size: 1.5rem;
+  }
 }

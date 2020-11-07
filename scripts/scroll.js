@@ -37,4 +37,4 @@ window.addEventListener('scroll', function () {
     else {
         header.classList.remove("active", "bg-black");
     }
-})
+});

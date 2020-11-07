@@ -3,7 +3,7 @@
 }
 
 .section {
-  height: calc(100vh - #{$header-height});
+  height: calc(100vh - 150px); // Viewport height - header height
   width: 100%;
   display: flex;
 
@@ -15,7 +15,8 @@
     }
   }
 
-  @media screen and (max-width: $media-small) {
+  @media screen and (max-width: $media-s) {
+    height: calc(100vh - 75px);
     flex-direction: column;
 
     @for $i from 1 through 12 {
