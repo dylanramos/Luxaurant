@@ -9,18 +9,18 @@
   justify-content: center;
 
   .logo {
-    font-size: 5em;
+    font-size: 8rem;
   }
 
   @media screen and (max-width: $media-m) {
     .logo {
-      font-size: 3em;
+      font-size: 5rem;
     }
   }
 
   @media screen and (max-width: $media-s) {
     .logo {
-      font-size: 2em;
+      font-size: 4rem;
     }
   }
 }

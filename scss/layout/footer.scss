@@ -28,7 +28,7 @@ footer {
     height: calc(100% - 250px); // Footer height - newsletter height
     padding: 1em;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 
     .map {
       @include image-properties;
@@ -36,13 +36,15 @@ footer {
       height: 400px;
       width: 500px;
       margin-bottom: 1.5em;
+      align-self: center;
       background-image: url("images/map.png");
     }
 
     .footer-text {
-      width: calc(100vw - 500px); // Viewport width - map width
+      width: 60vw;
       color: $color-grey;
       display: flex;
+      align-content: center;
       flex-wrap: wrap;
 
       .col-2 {
@@ -51,6 +53,11 @@ footer {
 
       h1 {
         margin-bottom: 1rem;
+      }
+
+      a {
+        color: $color-grey;
+        text-decoration: none;
       }
     }
   }
@@ -67,7 +74,6 @@ footer {
     }
 
     .footer-text {
-      width: calc(100% - 400px); // Viewport width - map width
       font-size: 1.5rem;
 
       .col-2 {

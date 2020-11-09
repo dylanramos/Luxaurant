@@ -47,8 +47,12 @@ input {
   border-radius: 0;
 }
 
-.container-full {
+.container {
   width: 100%;
+}
+
+.container-with-header {
+  margin-top: 150px;
 }
 
 .section {
@@ -104,7 +108,12 @@ input {
   height: 100%;
   width: calc(100% / 12);
 }
+
 @media screen and (max-width: 768px) {
+  .container-with-header {
+    margin-top: 75px;
+  }
+
   .section {
     height: calc(100vh - 75px);
     flex-direction: column;
@@ -157,8 +166,11 @@ input {
     height: 50vh;
     width: 100%;
   }
-}
 
+  .inverted {
+    flex-direction: column-reverse;
+  }
+}
 body {
   color: #141414;
   background-color: #EBEBEB;
@@ -418,29 +430,22 @@ h1 {
   border-bottom: 1px solid #141414;
 }
 
-.youtube, .linkedin, .twitter, .instagram, .facebook {
+.social-media {
   height: 50px;
   width: 50px;
+  margin-right: 1rem;
+  fill: #EBEBEB;
+}
+.social-media:hover {
+  fill: #DBB166;
 }
 
-.facebook {
-  background-image: url("images/facebook.svg");
+.link {
+  transition: all 0.5s ease-out;
 }
-
-.instagram {
-  background-image: url("images/instagram.svg");
-}
-
-.twitter {
-  background-image: url("images/twitter.svg");
-}
-
-.linkedin {
-  background-image: url("images/linkedin.svg");
-}
-
-.youtube {
-  background-image: url("images/youtube.svg");
+.link:hover {
+  padding-left: 30px;
+  border-left: 1px solid #141414;
 }
 
 header {
@@ -513,7 +518,7 @@ footer .footer-informations {
   height: calc(100% - 250px);
   padding: 1em;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 footer .footer-informations .map {
   background-size: cover;
@@ -521,12 +526,14 @@ footer .footer-informations .map {
   height: 400px;
   width: 500px;
   margin-bottom: 1.5em;
+  align-self: center;
   background-image: url("images/map.png");
 }
 footer .footer-informations .footer-text {
-  width: calc(100vw - 500px);
+  width: 60vw;
   color: #EBEBEB;
   display: flex;
+  align-content: center;
   flex-wrap: wrap;
 }
 footer .footer-informations .footer-text .col-2 {
@@ -534,6 +541,10 @@ footer .footer-informations .footer-text .col-2 {
 }
 footer .footer-informations .footer-text h1 {
   margin-bottom: 1rem;
+}
+footer .footer-informations .footer-text a {
+  color: #EBEBEB;
+  text-decoration: none;
 }
 @media screen and (max-width: 1024px) {
   footer .newsletter {
@@ -545,7 +556,6 @@ footer .footer-informations .footer-text h1 {
     width: 400px;
   }
   footer .footer-text {
-    width: calc(100% - 400px);
     font-size: 1.5rem;
   }
   footer .footer-text .col-2 {
@@ -580,16 +590,16 @@ footer .footer-informations .footer-text h1 {
   justify-content: center;
 }
 .home .logo {
-  font-size: 5em;
+  font-size: 8rem;
 }
 @media screen and (max-width: 1024px) {
   .home .logo {
-    font-size: 3em;
+    font-size: 5rem;
   }
 }
 @media screen and (max-width: 768px) {
   .home .logo {
-    font-size: 2em;
+    font-size: 4rem;
   }
 }
 
@@ -609,6 +619,12 @@ footer .footer-informations .footer-text h1 {
   background-size: cover;
   background-position: center;
   background-image: url("images/farmer.jpg");
+}
+
+.contact-image {
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/server.jpg");
 }
 
 /*# sourceMappingURL=main.css.map */
