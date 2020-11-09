@@ -1,3 +1,7 @@
+/* SELECTORS */
+const header = document.getElementsByTagName('header')[0];
+
+/* HEADER CLASS */
 let yPosition;
 
 window.addEventListener('scroll', function () {
