@@ -1,9 +1,7 @@
 /* SELECTORS */
-const header = document.getElementsByTagName('header')[0];
 const hamburger = document.getElementById('hamburger')
 const cross = document.querySelector('.cross');
 const menu = document.querySelector('.menu-wrap');
-const sections = document.querySelectorAll('.section');
 
 /* HAMBURGER MENU */
 let menuOpen = false;
@@ -22,19 +20,5 @@ hamburger.addEventListener('click', function () {
         menu.style.left = '0';
 
         menuOpen = true;
-    }
-});
-
-/* HEADER DISPLAY */
-let yPosition;
-
-window.addEventListener('scroll', function () {
-    yPosition = window.scrollY;
-
-    if(yPosition >= window.innerHeight - header.offsetHeight) {
-        header.classList.add("active", "bg-black");
-    }
-    else {
-        header.classList.remove("active", "bg-black");
     }
 });
