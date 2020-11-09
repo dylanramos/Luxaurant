@@ -247,12 +247,16 @@ h1 {
   background-color: #141414;
   border: 1px solid #DBB166;
 }
+
 @media screen and (max-width: 1024px) {
+  .button-black {
+    font-size: 1.5rem;
+  }
+
   .button-gold {
     font-size: 1.5rem;
   }
 }
-
 .hamburger {
   height: 80px;
   width: 80px;
@@ -292,7 +296,7 @@ h1 {
 }
 
 @media screen and (max-width: 1024px) {
-  .button-black {
+  header .button-black {
     display: none;
   }
 }
@@ -331,6 +335,43 @@ h1 {
   100% {
     opacity: 1;
   }
+}
+
+.text-input-border-bottom {
+  width: 100%;
+  padding: 0 0.2em;
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid #141414;
+}
+.text-input-border-bottom::placeholder {
+  color: #141414;
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+}
+.text-input-border-bottom:focus {
+  outline: none;
+}
+@media screen and (max-width: 1024px) {
+  .text-input-border-bottom {
+    font-size: 1.5rem;
+  }
+  .text-input-border-bottom::placeholder {
+    font-size: 1.5rem;
+  }
+}
+
+textarea {
+  padding: 0.5rem;
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+}
+textarea::placeholder {
+  color: #141414;
+}
+textarea:focus {
+  outline: none;
 }
 
 .description {
@@ -401,35 +442,6 @@ h1 {
   display: inline-block;
 }
 
-.text-input-border-all, .text-input-border-bottom {
-  width: 100%;
-  padding: 0em 0.2em;
-  background-color: #DBB166;
-  font-family: Roboto, sans-serif;
-  font-size: 30px;
-  border: none;
-}
-.text-input-border-all::placeholder, .text-input-border-bottom::placeholder {
-  color: #141414;
-  font-family: Roboto, sans-serif;
-  font-size: 30px;
-}
-.text-input-border-all:focus, .text-input-border-bottom:focus {
-  outline: none;
-}
-@media screen and (max-width: 1024px) {
-  .text-input-border-all, .text-input-border-bottom {
-    font-size: 1.5rem;
-  }
-  .text-input-border-all::placeholder, .text-input-border-bottom::placeholder {
-    font-size: 1.5rem;
-  }
-}
-
-.text-input-border-bottom {
-  border-bottom: 1px solid #141414;
-}
-
 .social-media {
   height: 50px;
   width: 50px;
@@ -446,6 +458,61 @@ h1 {
 .link:hover {
   padding-left: 30px;
   border-left: 1px solid #141414;
+}
+
+.description-form {
+  padding: 3em;
+}
+.description-form h1 {
+  margin-bottom: 1em;
+}
+.description-form .text-input-border-bottom {
+  margin-bottom: 2rem;
+}
+.description-form .container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  margin-bottom: 2rem;
+}
+.description-form .container .country-input {
+  height: 60px;
+  width: 130px;
+  margin-right: 10px;
+  border-bottom: 1px solid #141414;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.description-form .container .switzerland {
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  width: 70px;
+  background-image: url("images/switzerland.png");
+}
+.description-form .container .arrow-down {
+  width: 5px;
+  height: 5px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #141414;
+}
+.description-form .container .text-input-border-bottom {
+  margin: 0;
+}
+.description-form textarea {
+  height: 200px;
+  width: 100%;
+  max-height: 200px;
+  max-width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .description-form {
+    padding: 1em;
+    font-size: 1.5rem;
+  }
 }
 
 header {

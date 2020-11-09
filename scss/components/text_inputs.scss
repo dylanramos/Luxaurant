@@ -1,10 +1,10 @@
-%text-input-properties {
+.text-input-border-bottom {
   width: 100%;
-  padding: 0em 0.2em;
-  background-color: $color-gold;
+  padding: 0 0.2em;
   font-family: $font-body;
   font-size: $size-body;
   border: none;
+  border-bottom: 1px solid $color-black;
 
   &::placeholder {
     color: $color-black;
@@ -25,12 +25,16 @@
   }
 }
 
-.text-input-border-bottom {
-  @extend %text-input-properties;
+textarea {
+  padding: 0.5rem;
+  font-family: $font-body;
+  font-size: 1.5rem;
 
-  border-bottom: 1px solid $color-black;
-}
+  &::placeholder {
+    color: $color-black;
+  }
 
-.text-input-border-all {
-  @extend %text-input-properties;
+  &:focus {
+    outline: none;
+  }
 }

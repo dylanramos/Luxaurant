@@ -29,8 +29,14 @@
     background-color: $color-black;
     border: 1px solid $color-gold;
   }
+}
 
-  @media screen and (max-width: $media-m) {
+@media screen and (max-width: $media-m) {
+  .button-black {
+    font-size: 1.5rem;
+  }
+
+  .button-gold {
     font-size: 1.5rem;
   }
 }

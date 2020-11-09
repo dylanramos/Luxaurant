@@ -41,8 +41,10 @@
 }
 
 @media screen and (max-width: $media-m){
-  .button-black {
-    display: none;
+  header {
+    .button-black {
+      display: none;
+    }
   }
 }
 
