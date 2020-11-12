@@ -25,7 +25,6 @@ footer {
   }
 
   .footer-informations {
-    height: calc(100% - 250px); // Footer height - newsletter height
     padding: 1em;
     display: flex;
     justify-content: space-between;
@@ -41,14 +40,19 @@ footer {
     }
 
     .footer-text {
-      width: 60vw;
+      width: 60%;
       color: $color-grey;
       display: flex;
       align-content: center;
       flex-wrap: wrap;
 
-      .col-2 {
-        padding: 0 1.5em 1.5em 1.5em;
+      .footer-col {
+        width: 100%;
+        display: inline-flex;
+
+        div {
+          margin: 0 1.5em 1.5em;
+        }
       }
 
       h1 {
@@ -73,11 +77,19 @@ footer {
       width: 400px;
     }
 
-    .footer-text {
-      font-size: 1.5rem;
+    .footer-informations {
+      flex-wrap: wrap;
+      justify-content: center;
 
-      .col-2 {
+      .footer-text {
         width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+
+        .footer-col {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
       }
     }
   }
@@ -91,16 +103,6 @@ footer {
 
     .button-gold {
       padding: 0.5rem 2rem;
-    }
-
-    .footer-informations {
-      flex-wrap: wrap;
-      justify-content: center;
-
-      .footer-text {
-        width: 100%;
-        text-align: center;
-      }
     }
   }
 }

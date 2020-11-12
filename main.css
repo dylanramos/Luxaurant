@@ -56,12 +56,14 @@ input {
 }
 
 .section {
-  height: 780px;
   width: 100%;
   display: flex;
 }
+.section .col-auto {
+  width: 50%;
+}
 .section .col-2 {
-  height: 100%;
+  height: 780px;
   width: 50%;
 }
 
@@ -71,11 +73,13 @@ input {
   }
 
   .section {
-    height: 840px;
     flex-direction: column;
   }
+  .section .col-auto {
+    width: 100%;
+  }
   .section .col-2 {
-    height: 50%;
+    height: 420px;
     width: 100%;
   }
 
@@ -372,6 +376,7 @@ textarea:focus {
 }
 
 .description-form {
+  height: 100%;
   padding: 3em;
 }
 .description-form h1 {
@@ -406,6 +411,7 @@ textarea:focus {
 .description-form .container .arrow-down {
   width: 5px;
   height: 5px;
+  margin-left: 5px;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-top: 15px solid #141414;
@@ -419,9 +425,20 @@ textarea:focus {
   max-height: 200px;
   max-width: 100%;
 }
+.description-form .button-black {
+  margin-top: 1em;
+  font-size: 30px;
+  outline: none;
+}
+.description-form .button-black:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 1024px) {
   .description-form {
     padding: 1em;
+    font-size: 1.5rem;
+  }
+  .description-form .button-black {
     font-size: 1.5rem;
   }
 }
@@ -493,7 +510,6 @@ footer .newsletter form .text-input-border-bottom {
   width: 50%;
 }
 footer .footer-informations {
-  height: calc(100% - 250px);
   padding: 1em;
   display: flex;
   justify-content: space-between;
@@ -508,14 +524,18 @@ footer .footer-informations .map {
   background-image: url("images/map.png");
 }
 footer .footer-informations .footer-text {
-  width: 60vw;
+  width: 60%;
   color: #EBEBEB;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
 }
-footer .footer-informations .footer-text .col-2 {
-  padding: 0 1.5em 1.5em 1.5em;
+footer .footer-informations .footer-text .footer-col {
+  width: 100%;
+  display: inline-flex;
+}
+footer .footer-informations .footer-text .footer-col div {
+  margin: 0 1.5em 1.5em;
 }
 footer .footer-informations .footer-text h1 {
   margin-bottom: 1rem;
@@ -533,11 +553,18 @@ footer .footer-informations .footer-text a {
     height: 300px;
     width: 400px;
   }
-  footer .footer-text {
-    font-size: 1.5rem;
+  footer .footer-informations {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  footer .footer-text .col-2 {
+  footer .footer-informations .footer-text {
     width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  footer .footer-informations .footer-text .footer-col {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -546,14 +573,6 @@ footer .footer-informations .footer-text a {
   }
   footer .button-gold {
     padding: 0.5rem 2rem;
-  }
-  footer .footer-informations {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  footer .footer-informations .footer-text {
-    width: 100%;
-    text-align: center;
   }
 }
 

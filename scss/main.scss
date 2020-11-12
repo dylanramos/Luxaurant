@@ -1,8 +1,13 @@
+// Abstracts
 @import "abstracts/variables";
 @import "abstracts/mixins";
+
+// Base
 @import "base/reset";
 @import "base/containers";
 @import "base/styles";
+
+// Components
 @import "components/buttons";
 @import "components/menu";
 @import "components/logo";
@@ -13,8 +18,12 @@
 @import "components/social_medias";
 @import "components/link";
 @import "components/form";
+
+// Layout
 @import "layout/header";
 @import "layout/footer";
+
+// Pages
 @import "pages/home";
 @import "pages/menus_images";
 @import "pages/infos_images";

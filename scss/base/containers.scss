@@ -7,12 +7,15 @@
 }
 
 .section {
-  height: 780px;
   width: 100%;
   display: flex;
 
+  .col-auto {
+    width: 50%;
+  }
+
   .col-2 {
-    height: 100%;
+    height: 780px;
     width: 50%;
   }
 }
@@ -23,11 +26,14 @@
   }
 
   .section {
-    height: 840px;
     flex-direction: column;
 
+    .col-auto {
+      width: 100%;
+    }
+
     .col-2 {
-      height: 50%;
+      height: 420px;
       width: 100%;
     }
   }
