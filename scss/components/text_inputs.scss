@@ -2,14 +2,14 @@
   width: 100%;
   padding: 0 0.2em;
   font-family: $font-body;
-  font-size: $size-body;
+  font-size: $font-size;
   border: none;
   border-bottom: 1px solid $color-black;
 
   &::placeholder {
     color: $color-black;
     font-family: $font-body;
-    font-size: $size-body;
+    font-size: $font-size;
   }
 
   &:focus {
