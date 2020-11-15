@@ -1,8 +1,10 @@
+// Image properties for the whole site
 @mixin image-properties {
   background-size: cover;
   background-position: center;
 }
 
+// Homepage fade animation
 @mixin home-fade-animation {
   @keyframes fadeIn {
     0% {opacity: 0;}
