@@ -366,6 +366,12 @@ textarea:focus {
 .social-media:hover {
   fill: #DBB166;
 }
+@media screen and (max-width: 1024px) {
+  .social-media {
+    height: 40px;
+    width: 40px;
+  }
+}
 
 .link {
   transition: all 0.5s ease-out;

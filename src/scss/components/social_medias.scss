@@ -7,4 +7,9 @@
   &:hover {
     fill: $color-gold;
   }
+
+  @media screen and (max-width: $media-m) {
+    height: 40px;
+    width: 40px;
+  }
 }
