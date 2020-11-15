@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+}
+
+.container-with-header {
+  margin-top: 150px;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+
+  .col-auto {
+    width: 50%;
+  }
+
+  .col-2 {
+    height: 780px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: $media-s) {
+  .container-with-header {
+    margin-top: 75px;
+  }
+
+  .section {
+    flex-direction: column;
+
+    .col-auto {
+      width: 100%;
+    }
+
+    .col-2 {
+      height: 420px;
+      width: 100%;
+    }
+  }
+
+  .inverted {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,11 @@
+.description {
+  padding: 3em;
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: $media-m) {
+    font-size: 1.5rem;
+  }
+}

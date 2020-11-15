@@ -1,0 +1,11 @@
+.menu-1 {
+  @include image-properties;
+
+  background-image: url("images/menu.jpg");
+}
+
+.menu-2 {
+  @include image-properties;
+
+  background-image: url("images/menu_2.jpg");
+}

@@ -1,0 +1,10 @@
+.logo {
+  @include home-fade-animation;
+
+  font-family: $font-title;
+  font-size: 60px;
+  color: $color-black;
+  -webkit-text-stroke: 1px $color-gold;
+  text-decoration: none;
+  animation: fadeIn 2s ease-out;
+}

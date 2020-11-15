@@ -1,0 +1,5 @@
+.infos-image-1 {
+  @include image-properties;
+
+  background-image: url("images/farmer.jpg");
+}

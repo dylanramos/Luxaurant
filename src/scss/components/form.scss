@@ -1,0 +1,77 @@
+.description-form {
+  height: 100%;
+  padding: 3em;
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  .text-input-border-bottom {
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    margin-bottom: 2rem;
+
+    .country-input {
+      height: 60px;
+      width: 130px;
+      margin-right: 10px;
+      border-bottom: 1px solid $color-black;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .switzerland {
+      @include image-properties;
+
+      height: 50px;
+      width: 70px;
+      background-image: url("images/switzerland.png");
+    }
+
+    .arrow-down {
+      width: 5px;
+      height: 5px;
+      margin-left: 5px;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid $color-black;
+    }
+
+    .text-input-border-bottom {
+      margin: 0;
+    }
+  }
+
+  textarea {
+    height: 200px;
+    width: 100%;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  .button-black {
+    margin-top: 1em;
+    font-size: $font-size;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: $media-m) {
+    padding: 1em;
+    font-size: 1.5rem;
+
+    .button-black {
+      font-size: 1.5rem;
+    }
+  }
+}

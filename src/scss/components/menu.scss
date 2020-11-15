@@ -1,0 +1,70 @@
+.hamburger {
+  height: 80px;
+  width: 80px;
+  content: url("images/hamburger.svg");
+
+  &:hover {
+    content: url("images/hamburger_hover.svg");
+    cursor: pointer;
+  }
+}
+
+.cross {
+  height: 80px;
+  width: 80px;
+  content: url("images/cross.svg");
+
+  &:hover {
+    content: url("images/cross_hover.svg");
+    cursor: pointer;
+  }
+}
+
+.menu-wrap {
+  height: calc(100vh - 150px); // Viewport height - header height
+  width: 375px;
+  background-color: $color-gold;
+  border: 1px solid $color-black;
+  position: fixed;
+  bottom: 0;
+  left: -375px;
+  transition: all 0.5s ease-out;
+
+  li {
+    padding: 2rem 0 0 2rem;
+
+    a {
+      color: $color-black;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: $media-m){
+  header {
+    .button-black {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $media-s) {
+  .menu-wrap {
+    height: calc(100vh - 75px); // Viewport height - header height
+  }
+
+  .hamburger {
+    height: 60px;
+    width: 60px;
+  }
+
+  .cross {
+    height: 60px;
+    width: 60px;
+  }
+
+  .menu-wrap {
+    width: 100vw;
+    left: -100vw;
+  }
+}

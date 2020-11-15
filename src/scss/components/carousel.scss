@@ -1,0 +1,32 @@
+.carousel {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .arrow-left {
+    margin-left: 30px;
+    align-self: center;
+  }
+
+  .arrow-right {
+    margin-right: 30px;
+    align-self: center;
+  }
+
+  .dots {
+    align-self: flex-end;
+    margin-bottom: 10px;
+
+    .dot {
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+      margin: 0 2px;
+      background-color: $color-grey;
+      border-radius: 50%;
+      border: 1px solid $color-black;
+      display: inline-block;
+    }
+  }
+}
